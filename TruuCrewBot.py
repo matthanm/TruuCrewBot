@@ -103,7 +103,7 @@ def main():
 				for arg in args[1:]:
 					message += arg
 				print("Executing print of '" + message + "'...")
-				r = requests.post("https://api.groupme.com/v3/bots/post", data={"bot_id": "2dcdbc43412c876c1c4cf8f8b7", "text": message})
+				r = requests.post("https://api.groupme.com/v3/bots/post", data={"bot_id": "f5653fbe08bba8afa0c7db14da", "text": message})
 				print(r.status_code, r.reason)
 			else:
 				print("You have to enter a message to print!")
