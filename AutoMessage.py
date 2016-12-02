@@ -27,5 +27,5 @@ class AutoMessage(threading.Thread):
 		self.isRunning = False
 	def postMessage(self):
 		print("Executing print of '" + self.message + "'...")
-		#r = requests.post("https://api.groupme.com/v3/bots/post", data={"bot_id": "2dcdbc43412c876c1c4cf8f8b7", "text": self.message})
-		#print(r.status_code, r.reason)
+		r = requests.post("https://api.groupme.com/v3/bots/post", data={"bot_id": "2dcdbc43412c876c1c4cf8f8b7", "text": self.message})
+		print(r.status_code, r.reason)
